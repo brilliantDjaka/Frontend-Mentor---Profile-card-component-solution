@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      background-color: #18A0AC;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      
+    }
+  </style>
+  <style>
+    .main-card {
+      border-radius: 15px;
+      text-align: center;
+      width: 370px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    *{
+      padding: 0;
+      margin:0;
+      
+    }
+    .container {
+      background-color: #18A0AC;
+      display: grid;
+      place-items: center;
+      height: 600px;
+    }
+
+    .photo {
+      margin-top: 100px;
+      width: 80px;
+      height: 80px;
+      align-self: center;
+      border-radius: 100%;
+      border: 4px solid;
+      border-color: white;
+      background-image: url('./images/image-victor.jpg');
+      background-position: center;
+      background-size: cover;
+      z-index: 0;
+    }
+
+    .title {
+      font-weight: 700;
+      margin-top: 20px;
+      /* font-family: Kumbh Sans; */
+    }
+    .subtitle{
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1.5px solid;
+      border-color: #F1F1F1;
+      font-weight: 400;
+    }
+    
+    .header-background{
+      border-radius: 15px 15px 0 0;
+      position: absolute;
+      width: inherit;
+      background-image: url('./images/bg-pattern-card.svg');
+      height: 145px;
+    }
+    .footer{
+      display: flex;
+      margin-bottom: 30px;
+      justify-content: space-around;
+    }
+    .sub-footer{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main-card">
+      <div class="header-background">
+
+      </div>
+
+      <div class="photo"></div>
+
+      <div class="title">
+        Victor Crest
+        26
+      </div>
+      
+      <div class="subtitle">
+        London
+      </div>
+
+     <div class="footer">
+      <div class="sub-footer">
+        <div style="font-weight: 700;">80K</div>
+      <div style="font-weight: 400;">Followers</div>
+      </div>
+
+      <div class="sub-footer">
+        <div style="font-weight: 700;">803K</div>
+      <div style="font-weight: 400;">Likes</div>
+      </div>
+
+      <div class="sub-footer">
+        <div style="font-weight: 700;">1.4K</div>
+      <div style="font-weight: 400;">Photos</div>
+      </div>
+     </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
